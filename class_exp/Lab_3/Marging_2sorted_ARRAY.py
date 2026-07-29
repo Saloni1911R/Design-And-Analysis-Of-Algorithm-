@@ -14,10 +14,10 @@ def merging(A,B):
         merge[k] = A[i]
         i = i+1
         k = k+1
-    while(i<len(B)):
-            merge[k] = B[j]
-            j = j+1
-            k = k+1
+    while(j<len(B)):
+        merge[k] = B[j]
+        j = j+1
+        k = k+1
     return merge
 
 A = [1,3,4,5,6,7,9,15]
