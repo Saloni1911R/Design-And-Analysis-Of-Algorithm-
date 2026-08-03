@@ -38,11 +38,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/0169-majority-element) |
+| [1763-longest-nice-substring](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/1763-longest-nice-substring) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3518-smallest-palindromic-rearrangement-ii) |
 ## String
 |  |
 | ------- |
+| [1763-longest-nice-substring](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/1763-longest-nice-substring) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3517-smallest-palindromic-rearrangement-i) |
@@ -89,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/0191-number-of-1-bits) |
+| [1763-longest-nice-substring](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/1763-longest-nice-substring) |
 ## Tree
 |  |
 | ------- |
@@ -106,4 +109,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0190-reverse-bits](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/0191-number-of-1-bits) |
+| [1763-longest-nice-substring](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/1763-longest-nice-substring) |
+## Sliding Window
+|  |
+| ------- |
+| [1763-longest-nice-substring](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/1763-longest-nice-substring) |
 <!---LeetCode Topics End-->
