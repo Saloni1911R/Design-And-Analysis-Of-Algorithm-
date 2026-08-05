@@ -117,4 +117,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1763-longest-nice-substring](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/1763-longest-nice-substring) |
+## Depth-First Search
+|  |
+| ------- |
+| [3310-remove-methods-from-project](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3310-remove-methods-from-project) |
+## Breadth-First Search
+|  |
+| ------- |
+| [3310-remove-methods-from-project](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3310-remove-methods-from-project) |
+## Graph Theory
+|  |
+| ------- |
+| [3310-remove-methods-from-project](https://github.com/Saloni1911R/Design-And-Analysis-Of-Algorithm-/tree/master/3310-remove-methods-from-project) |
 <!---LeetCode Topics End-->
