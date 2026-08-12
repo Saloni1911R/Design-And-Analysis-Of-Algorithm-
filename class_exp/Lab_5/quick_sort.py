@@ -13,7 +13,7 @@ def quick_sort(arr,start,end):
         pIndex = partition(arr,start,end)
         quick_sort(arr,start,pIndex-1) # left side of pivot
         quick_sort(arr,pIndex+1,end) # right side of pivot
-        return arr
+    return arr
 
 
 arr = [5, 6, 8, 2, 7, 3, 1, 9, 4]
