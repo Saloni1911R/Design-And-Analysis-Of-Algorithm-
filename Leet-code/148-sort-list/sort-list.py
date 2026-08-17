@@ -10,11 +10,10 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        # Base case: if list is empty or has only one node
+       
         if not head or not head.next:
             return head
         
-        # Step 1: Split the list into two halves
         prev = None
         slow = head
         fast = head
@@ -24,14 +23,11 @@ class Solution(object):
             slow = slow.next
             fast = fast.next.next
             
-        # Disconnect the first half from the second half
         prev.next = None
         
-        # Step 2: Recursively sort both halves
         left = self.sortList(head)
         right = self.sortList(slow)
         
-        # Step 3: Merge the sorted halves
         return self.merge(left, right)
         
     def merge(self, l1, l2):
@@ -46,7 +42,6 @@ class Solution(object):
                 curr.next = l2
                 l2 = l2.next
             curr = curr.next
-            
-        # Attach the remaining nodes
+          
         curr.next = l1 if l1 else l2
         return dummy.next
