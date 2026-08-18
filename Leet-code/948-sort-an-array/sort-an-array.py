@@ -1,22 +1,40 @@
 class Solution(object):
     def sortArray(self, nums):
-        n = len(nums)
-        
-        def down(size, i):
-            while 2 * i + 1 < size:
-                child = 2 * i + 1
-                if child + 1 < size and nums[child+1] > nums[child]:
-                    child += 1
-                if nums[i] >= nums[child]: 
-                    break
-                nums[i], nums[child] = nums[child], nums[i]
-                i = child
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        if len(nums) <= 1:
+            return nums
 
-        for i in range(n // 2 - 1, -1, -1):
-            down(n, i)
+        mid = len(nums) // 2
+
+        left_half = self.sortArray(nums[:mid])
+        right_half = self.sortArray(nums[mid:])
+
+        return self.merging(left_half, right_half)
+
+    def merging(self, A, B):
+        merge = [0] * (len(A) + len(B))
+        i, j, k = 0, 0, 0
+        
+        while i < len(A) and j < len(B):
+            if A[i] < B[j]:
+                merge[k] = A[i]
+                i += 1
+            else:
+                merge[k] = B[j]
+                j += 1
+            k += 1
             
-        for i in range(n - 1, 0, -1):
-            nums[0], nums[i] = nums[i], nums[0]
-            down(i, 0)
+        while i < len(A):
+            merge[k] = A[i]
+            i += 1
+            k += 1
             
-        return nums
+        while j < len(B):
+            merge[k] = B[j]
+            j += 1
+            k += 1
+            
+        return merge
