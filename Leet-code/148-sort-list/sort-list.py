@@ -31,8 +31,8 @@ class Solution(object):
         return self.merge(left, right)
         
     def merge(self, l1, l2):
-        dummy = ListNode(0)
-        curr = dummy
+        temp = ListNode(0)
+        curr = temp
         
         while l1 and l2:
             if l1.val < l2.val:
@@ -44,4 +44,4 @@ class Solution(object):
             curr = curr.next
           
         curr.next = l1 if l1 else l2
-        return dummy.next
+        return temp.next
