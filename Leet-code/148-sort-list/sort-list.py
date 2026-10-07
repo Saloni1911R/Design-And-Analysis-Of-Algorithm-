@@ -6,42 +6,25 @@
 
 class Solution(object):
     def sortList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
-       
         if not head or not head.next:
             return head
-        
-        prev = None
-        slow = head
-        fast = head
-        
+        slow, fast = head, head.next
         while fast and fast.next:
-            prev = slow
             slow = slow.next
             fast = fast.next.next
-            
-        prev.next = None
+        
+        mid, slow.next = slow.next, None  
         
         left = self.sortList(head)
-        right = self.sortList(slow)
+        right = self.sortList(mid)
         
-        return self.merge(left, right)
-        
-    def merge(self, l1, l2):
-        temp = ListNode(0)
-        curr = temp
-        
-        while l1 and l2:
-            if l1.val < l2.val:
-                curr.next = l1
-                l1 = l1.next
+        dummy = curr = ListNode(0)
+        while left and right:
+            if left.val < right.val:
+                curr.next, left = left, left.next
             else:
-                curr.next = l2
-                l2 = l2.next
+                curr.next, right = right, right.next
             curr = curr.next
-          
-        curr.next = l1 if l1 else l2
-        return temp.next
+            
+        curr.next = left or right
+        return dummy.next
